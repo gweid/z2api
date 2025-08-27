@@ -78,13 +78,10 @@ cp .env.example .env
 python main.py
 ```
 
-**方式2：Docker运行**
+**方式2：Docker compose 运行**
 ```bash
 # 构建镜像
-docker build -t z2api .
-
-# 运行容器
-docker run -d -p 3007:3007 --env-file .env z2api
+dokcer compose up -d
 ```
 
 服务器将在 `http://localhost:3007` 启动
