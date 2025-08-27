@@ -2,7 +2,8 @@ version: "3.8"
 
 services:
   z2api:
-    image: ghcr.io/oldjs/z2api:docker
+    build: .
+    image: z2api-server:latest
     container_name: z2api-server
     ports:
       - "3007:3007"
